@@ -1,0 +1,2206 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <DatagraphCoreV1 />
+    <_.fcp.DatagraphNodeAxisTitle.true...DatagraphNodeAxisTitle />
+    <DatagraphNodeSingleValueFieldV1 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Product Positioning' inline='true' name='federated.085asmt0it95sz186m49j1khy8b2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Product Positioning' name='textscan.0oqpakx0qt3dod1aemgup0mtcruj'>
+            <connection class='textscan' directory='C:/Users/PAGID/Downloads' filename='Product Positioning.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0oqpakx0qt3dod1aemgup0mtcruj' name='Product Positioning.csv' table='[Product Positioning#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Product ID' ordinal='0' />
+            <column datatype='string' name='Product Position' ordinal='1' />
+            <column datatype='real' name='Price' ordinal='2' />
+            <column datatype='real' name='Competitor&apos;s Price' ordinal='3' />
+            <column datatype='string' name='Promotion' ordinal='4' />
+            <column datatype='string' name='Foot Traffic' ordinal='5' />
+            <column datatype='string' name='Consumer Demographics' ordinal='6' />
+            <column datatype='string' name='Product Category' ordinal='7' />
+            <column datatype='string' name='Seasonal' ordinal='8' />
+            <column datatype='integer' name='Sales Volume' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Product ID]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Product ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Position]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Product Position</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Competitor&apos;s Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Competitor&apos;s Price]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Competitor&apos;s Price</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Promotion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Promotion]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Promotion</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Foot Traffic</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Foot Traffic]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Foot Traffic</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumer Demographics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Consumer Demographics]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Consumer Demographics</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seasonal</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Seasonal]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Seasonal</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Volume</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sales Volume]</local-name>
+            <parent-name>[Product Positioning.csv]</parent-name>
+            <remote-alias>Sales Volume</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='zero' datatype='integer' name='[Calculation_628252172245114880]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='price' datatype='real' name='[Calculation_628252172298698753]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Price]' />
+      </column>
+      <column caption='Price Difference' datatype='real' name='[Calculation_628252172302020610]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Price] - [Competitor&apos;s Price]' />
+      </column>
+      <column caption='performances testing' datatype='string' name='[Calculation_628252172302536707]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Sales Volume] &gt;= 1800 THEN &quot;High&quot;&#13;&#10;ELSEIF [Sales Volume] &gt;= 1600 THEN &quot;Medium&quot;&#13;&#10;ELSE &quot;Low&quot;&#13;&#10;END' />
+      </column>
+      <column caption='postiton score' datatype='integer' name='[Calculation_628252172303962116]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [Product Position] = &quot;Eye-Level&quot; THEN 3&#13;&#10;ELSEIF [Product Position] = &quot;Top&quot; THEN 2&#13;&#10;ELSEIF [Product Position] = &quot;Bottom&quot; THEN 1&#13;&#10;END' />
+      </column>
+      <column datatype='real' name='[Competitor&apos;s Price]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Foot Traffic]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Product ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Seasonal]' role='dimension' type='nominal' />
+      <column caption='Product Positioning.csv' datatype='table' name='[__tableau_internal_object_id__].[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Competitor&apos;s Price]' derivation='Avg' name='[avg:Competitor&apos;s Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Foot Traffic]' derivation='None' name='[none:Foot Traffic:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Seasonal]' derivation='None' name='[none:Seasonal:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_628252172298698753]' derivation='Sum' name='[sum:Calculation_628252172298698753:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_628252172302020610]' derivation='Sum' name='[sum:Calculation_628252172302020610:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Competitor&apos;s Price]' derivation='Sum' name='[sum:Competitor&apos;s Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price]' derivation='Sum' name='[sum:Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sales Volume]' derivation='Sum' name='[sum:Sales Volume:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (Product Category,Product Position)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:Product Category:nk]' />
+          <groupfilter function='level-members' level='[none:Product Position:nk]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/PAGID/AppData/Local/Temp/TableauTemp/#TableauTemp_1iocz9618kzu901e7jca11hyn91u.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/24/2025 05:51:18 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Product ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Product ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>989</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Position</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>897</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Competitor&apos;s Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Competitor&apos;s Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Competitor&apos;s Price</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>915</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Promotion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Promotion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Promotion</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Foot Traffic</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Foot Traffic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Foot Traffic</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Consumer Demographics</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Consumer Demographics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Consumer Demographics</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Product Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Product Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Product Category</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Seasonal</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Seasonal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Seasonal</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Volume</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sales Volume]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Volume</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Product Positioning.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>811</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Price:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Competitor&apos;s Price:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[__tableau_internal_object_id__].[cnt:Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172298698753:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Competitor&apos;s Price:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172302020610:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Consumer Demographics:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;College students&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Young adults&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Seniors&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Families&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Seasonal:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Foot Traffic:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Low&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Product Category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Clothing&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Food&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Electronics&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Product Positioning.csv' id='Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4'>
+            <properties context=''>
+              <relation connection='textscan.0oqpakx0qt3dod1aemgup0mtcruj' name='Product Positioning.csv' table='[Product Positioning#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Product ID' ordinal='0' />
+                  <column datatype='string' name='Product Position' ordinal='1' />
+                  <column datatype='real' name='Price' ordinal='2' />
+                  <column datatype='real' name='Competitor&apos;s Price' ordinal='3' />
+                  <column datatype='string' name='Promotion' ordinal='4' />
+                  <column datatype='string' name='Foot Traffic' ordinal='5' />
+                  <column datatype='string' name='Consumer Demographics' ordinal='6' />
+                  <column datatype='string' name='Product Category' ordinal='7' />
+                  <column datatype='string' name='Seasonal' ordinal='8' />
+                  <column datatype='integer' name='Sales Volume' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.085asmt0it95sz186m49j1khy8b2'>
+      <datasources>
+        <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+        <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+        <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]'>
+        <groupfilter function='level-members' level='[none:Consumer Demographics:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]'>
+        <groupfilter function='level-members' level='[none:Product Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]'>
+        <groupfilter function='level-members' level='[none:Product Position:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Avg Sales Volume vs Product Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' scope='cols' value='0' />
+            <encoding attr='space' class='0' field='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' field-type='quantitative' major-origin='0.0' major-spacing='500.0' max='1900.0' min='500.0' minor-origin='0.0' minor-spacing='200.0' range-type='fixed' scope='cols' type='space' />
+            <format attr='height' field='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' value='37' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' value='78' />
+            <format attr='text-format' field='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' value='n#,##0,.00K;-#,##0,.00K' />
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='width' field='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' value='66' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='234' />
+                <format attr='maxheight' value='234' />
+                <format attr='minwidth' value='437' />
+                <format attr='maxwidth' value='437' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</rows>
+        <cols>[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]</cols>
+      </table>
+      <simple-id uuid='{E82F6C2D-219D-4A06-8D92-23B15BE2EB32}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Tableau Bold'>Competitor Price vs Price</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column caption='Price Difference' datatype='real' name='[Calculation_628252172302020610]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Price] - [Competitor&apos;s Price]' />
+            </column>
+            <column caption='performances testing' datatype='string' name='[Calculation_628252172302536707]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Sales Volume] &gt;= 1800 THEN &quot;High&quot;&#13;&#10;ELSEIF [Sales Volume] &gt;= 1600 THEN &quot;Medium&quot;&#13;&#10;ELSE &quot;Low&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Competitor&apos;s Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Competitor&apos;s Price]' derivation='Avg' name='[avg:Competitor&apos;s Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_628252172302536707]' derivation='None' name='[none:Calculation_628252172302536707:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_628252172302020610]' derivation='Sum' name='[sum:Calculation_628252172302020610:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Competitor&apos;s Price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' value='22' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='4' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' value='normal' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#dfedeb' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='5' />
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='stroke-size' scope='cols' value='4' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172302020610:qk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Calculation_628252172302536707:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.085asmt0it95sz186m49j1khy8b2].[Multiple Values]</rows>
+        <cols>([federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk] / [federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{E87DEFEB-1BF7-4165-A985-2F837E7494BA}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Average Sales By Product Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales Volume]' derivation='Sum' name='[sum:Sales Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[Exclusions (Product Category,Product Position)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:Product Category:nk]' />
+                <groupfilter function='level-members' level='[none:Product Position:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[none:Product Category:nk]' member='&quot;Food&quot;' />
+                <groupfilter function='member' level='[none:Product Position:nk]' member='&quot;End-cap&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[Exclusions (Product Category,Product Position)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='546' />
+            <format attr='text-align' value='left' />
+            <format attr='height' value='277' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4BCB594F-C851-43B0-B3B2-6ACCE9C65D08}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>Consumer Demographics vs Sales Volume</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column caption='zero' datatype='integer' name='[Calculation_628252172245114880]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_628252172245114880]' derivation='Sum' name='[sum:Calculation_628252172245114880:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Sum' name='[sum:Sales Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='stroke-size' scope='cols' value='4' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-weight' value='bold' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' />
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='3.2596685886383057' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.7292816638946533' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d4d4d4' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk] + [federated.085asmt0it95sz186m49j1khy8b2].[sum:Calculation_628252172245114880:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{15BD793D-512F-44F6-B905-20C9EA9F666E}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Product Category vs Prices</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='4' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' />
+              <wedge-size column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]' />
+              <size column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{11455A7D-0A6D-42E3-B0FC-6C48793C91BD}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Avg Sales Volume By Product Category by Season</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Seasonal]' role='dimension' type='nominal' />
+            <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Seasonal]' derivation='None' name='[none:Seasonal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales Volume]' derivation='Sum' name='[sum:Sales Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' field-type='quantitative' major-origin='0' major-spacing='100000' max='649509' min='0' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='text-align' value='center' />
+            <format attr='text-orientation' value='0' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='text-align' data-class='subtotal' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Seasonal:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Seasonal:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]</rows>
+        <cols>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</cols>
+      </table>
+      <simple-id uuid='{5CCF69C3-1E6C-4CF6-9BBA-C27E486CAAA6}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Foot traffic by Avg Sales volume</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Foot Traffic]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Foot Traffic]' derivation='None' name='[none:Foot Traffic:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Foot Traffic:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]' />
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' />
+              <color column='[federated.085asmt0it95sz186m49j1khy8b2].[none:Foot Traffic:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3464C2FE-A3FD-4AA8-8154-2DC0F6063707}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>Product Category on Price and Sales Volume</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+            <column datatype='real' name='[Competitor&apos;s Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Sales Volume]' role='measure' type='quantitative' />
+            <column caption='Product Positioning.csv' datatype='table' name='[__tableau_internal_object_id__].[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Price]' derivation='Avg' name='[avg:Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Avg' name='[avg:Sales Volume:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Competitor&apos;s Price]' derivation='Sum' name='[sum:Competitor&apos;s Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sales Volume]' derivation='Sum' name='[sum:Sales Volume:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Competitor&apos;s Price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[__tableau_internal_object_id__].[cnt:Product Positioning.csv_ACA52BD9EC0D46D4BF1F6D12B6FA36F4:qk]&quot;</bucket>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]</column>
+            <column>[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]' value='184' />
+            <format attr='text-align' value='center' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='4' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='background-color' value='#ddebf0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='rows' value='#00aaff' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-color' scope='cols' value='#00aaff' />
+            <format attr='stroke-size' scope='cols' value='4' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+            <format attr='border-color' value='#00aaff' />
+            <format attr='border-style' value='solid' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.085asmt0it95sz186m49j1khy8b2].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk] / [federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk])</rows>
+        <cols>[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{11E9C65F-46AE-4B89-B0D7-A88350B8E64E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>PRODUCT PLACEMENT ANALYSIS-DASHBOARD</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#b4b4b4' />
+        </style-rule>
+        <style-rule element='dash-title'>
+          <format attr='color' value='#000000' />
+          <format attr='background-color' value='#000000' />
+          <format attr='border-width' value='4' />
+          <format attr='border-style' value='solid' />
+          <format attr='border-color' value='#00aaff' />
+        </style-rule>
+        <style-rule element='dash-subtitle'>
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+        <style-rule element='dash-text'>
+          <format attr='text-align' value='center' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='Product Positioning' name='federated.085asmt0it95sz186m49j1khy8b2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.085asmt0it95sz186m49j1khy8b2'>
+        <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+        <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+        <column-instance column='[Consumer Demographics]' derivation='None' name='[none:Consumer Demographics:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product Category]' derivation='None' name='[none:Product Category:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Product Position]' derivation='None' name='[none:Product Position:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='5' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone fixed-size='42' h='6242' id='7' is-fixed='true' type-v2='title' w='99034' x='483' y='999'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='91760' id='6' type-v2='layout-basic' w='99034' x='483' y='7241' />
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='43071' id='14' name='Sheet 4' w='32710' x='32830' y='12360'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='41074' id='18' name='Sheet 6' w='33313' x='66566' y='58801'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='42322' id='21' name='Sheet 7' w='31865' x='543' y='56804'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='9114' id='25' mode='checkdropdown' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' type-v2='filter' values='database' w='9656' x='67351' y='12859'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='17728' id='26' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' type-v2='filter' values='database' w='9656' x='79240' y='9613'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='16479' id='27' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]' type-v2='filter' values='database' w='9656' x='90223' y='9238'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='42322' id='28' name='Sheet 1' w='31382' x='845' y='12484'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='29089' id='29' name='Sheet 8' w='33313' x='66566' y='28839'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='2' />
+          </zone-style>
+        </zone>
+        <zone h='42072' id='30' name='Sheet 3' w='33313' x='32710' y='56679' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#ffffff'>PRODUCT PLACEMENT ANALYSIS-DASHBOARD</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='32' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='31' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='42' h='6242' id='7' type-v2='title' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9114' id='25' mode='checkdropdown' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' type-v2='filter' values='database' w='9656' x='67351' y='12859'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17728' id='26' mode='checkdropdown' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' type-v2='filter' values='database' w='9656' x='79240' y='9613'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16479' id='27' mode='checkdropdown' name='Sheet 4' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]' type-v2='filter' values='database' w='9656' x='90223' y='9238'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43071' id='14' is-fixed='true' name='Sheet 4' w='32710' x='32830' y='12360'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42322' id='28' is-fixed='true' name='Sheet 1' w='31382' x='845' y='12484'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='228' h='29089' id='29' is-fixed='true' name='Sheet 8' w='33313' x='66566' y='28839'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42072' id='30' is-fixed='true' name='Sheet 3' w='33313' x='32710' y='56679'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='42322' id='21' is-fixed='true' name='Sheet 7' w='31865' x='543' y='56804'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41074' id='18' is-fixed='true' name='Sheet 6' w='33313' x='66566' y='58801'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F6DF10FA-E0FD-4D06-BE8D-3CA98D824257}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Book'>PRODUCT PLACEMENT ANALYSIS-AVERAGE SALES DETAILS</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5eddc' />
+        </style-rule>
+        <style-rule element='story-description'>
+          <format attr='font-weight' value='bold' />
+          <format attr='border-color' value='#00aaff' />
+          <format attr='border-width' value='4' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='font-weight' value='bold' />
+          <format attr='background-color' value='#75a1c7' />
+          <format attr='width' value='250' />
+        </style-rule>
+        <style-rule element='story-title'>
+          <format attr='font-weight' value='bold' />
+          <format attr='text-align' value='center' />
+          <format attr='background-color' value='#000000' />
+          <format attr='border-width' value='4' />
+          <format attr='border-style' value='solid' />
+          <format attr='border-color' value='#00aaff' />
+          <format attr='color' value='#ffffff' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='1' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='5119' id='3' type-v2='title' w='99034' x='483' y='999' />
+            <zone h='12609' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99034' x='483' y='6118' />
+            <zone h='80274' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99034' x='483' y='18727'>
+              <flipboard active-id='9' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='The Product Category Clothing has Highest Average Sales Volume' captured-sheet='Sheet 1' id='1' />
+                  <story-point caption='The Product Postition at the Front of store as high sales volumes and high foot traffic' captured-sheet='Sheet 7' id='3' />
+                  <story-point caption='The Product Clothing At front of Stores has  highest sales volume' captured-sheet='Sheet 3' id='5' />
+                  <story-point caption='The Students of the Consumer Demographics Contain more sales volume and Youndadults is lesser than seniors,familities demographics' captured-sheet='Sheet 4' id='7' />
+                  <story-point caption='The  Product Category Food avg price is more than Clothing&amp;Electronics Average Sum Volume' captured-sheet='Sheet 5' id='9' />
+                  <story-point caption='The product category Clothing is contain more sales volume in seasonal and followed by the category of the food is contain less in sales volume in unseasonal' captured-sheet='Sheet 6' id='11' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{D17463C2-272E-4CDA-82A3-7C8FE1DB8D61}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' type='filter' />
+            <card param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Position:nk]' type='filter' />
+            <card param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BFB05D46-4AB4-4821-AD61-068A1B788230}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.085asmt0it95sz186m49j1khy8b2].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ED4E4C33-BE96-4D84-9F3E-5665031F313B}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[sum:Sales Volume:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A528BA70-B6FD-4382-9EB3-D593B112FDE2}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Consumer Demographics:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{53FF2851-9860-4A6E-8136-8773B6B31F87}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Product Category:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Price:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{22CC7B0E-F49E-44C6-B580-1C9D6C8621AB}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Seasonal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F75E977D-8361-468A-9D48-B23471820D57}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.085asmt0it95sz186m49j1khy8b2].[none:Foot Traffic:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{67D0CA6C-FF3E-4066-AF28-912155B66F1C}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{F5F791D3-5133-4C44-BD43-538FBE1129F6}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 7'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6C25D04B-0692-4F9A-8184-318AE938E593}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{7DB66322-0EA4-40AA-B249-C17FEFE6FEBC}' />
+    </window>
+  </windows>
+  <datagraph>
+    <graph>
+      <properties>
+        <default-execution-subgraph-guid value='644d99c6-0858-4e94-a925-9ea99f208540' />
+      </properties>
+      <node-execution-subgraphs>
+        <pair execution-subgraph-guid='644d99c6-0858-4e94-a925-9ea99f208540' node-guid='696629be-fc9a-400e-a989-eb0c98939393' />
+        <pair execution-subgraph-guid='644d99c6-0858-4e94-a925-9ea99f208540' node-guid='b12048bc-7e8c-468c-942b-64b81af587bb' />
+      </node-execution-subgraphs>
+      <nodes>
+        <single-value-field-node fieldname='[federated.085asmt0it95sz186m49j1khy8b2].[Calculation_628252172245114880]' fieldname-input-guid='f7f1dec0-22c6-48f8-a1c8-368e58b99c9d' node-guid='696629be-fc9a-400e-a989-eb0c98939393' value-output-guid='e02fc056-d120-43de-bc61-1498d453ef3b' />
+        <_.fcp.DatagraphNodeAxisTitle.true...axis-title-node duplicate-index='0' fieldname='[federated.085asmt0it95sz186m49j1khy8b2].[avg:Sales Volume:qk]' node-guid='b12048bc-7e8c-468c-942b-64b81af587bb' orientation='horizontal' sheet-identifier='{E82F6C2D-219D-4A06-8D92-23B15BE2EB32}' title-input-guid='ae8f3829-3c4a-4025-8147-05fef8d81bd5' />
+      </nodes>
+      <edges>
+        <edge from='e02fc056-d120-43de-bc61-1498d453ef3b' to='ae8f3829-3c4a-4025-8147-05fef8d81bd5' />
+      </edges>
+      <pin-values />
+    </graph>
+  </datagraph>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAALhklEQVR4nO3da2xU95nH8e+Zmz3jwTd8wdhcbHOxXeOQAA2ElKTlUhKloPSSRduIVFmi
+      KnmxL1rti90X+6JV90WlaLvdF5G2yu5Ku1LVW0iaqoVu001IQgkUG7yEhEsA2xTMzR57bM/Y
+      czn7gsoOUpsSOCcH8/w+b/AY6/Hf4K/PmeNzzjiu67qIGBUBmExfpFjMBb0WkU9cBKBYyOF6
+      GMCvr8X5r4E4TIx4NlPEDxE/hn4wEeWl17vh25v8GC/imVDQCxAJkgIQ0xSAmKYAxDTHdV03
+      k+rn70+U89pQ3JOhbUn46dkpuHTGk3kifpk+CtQ/NMGx7zznydDGzZtYuvopnlu11JN5cueJ
+      OJC/C36FOnMYNJeFt3/ozdTWSmoe2Mm2ev1y7W4VC8FUMehV3D49BxDTFICYpgDENAUgpvly
+      LhDAtZEJfvn2Sb/GS8DCDhTuqqNAHhsazfA/pz/wa7yIJ7QLJKYpADFNAYhpCkBMUwBimgIQ
+      0xSAmKYAxDQFIKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQFIKYpADHthgBqG1vYsvmz1DUs
+      oLE2Mf3+cCRKyIG2tvY/vifGik8t/yTXKTfBcRwWN1RO/6cmEnHuW1pPIhpi2aI6OpoqSSTi
+      VCfCNNWV66cfH7omOFSS5Om/3sa/vvAftK7ZQku+m7bVHeSHB1j28E6Kp16hrm0jv+85zAdH
+      9vOp9g6qG5opLyvlnX2vs2r9Q5AZ4levvRnk12NaZWWSrWsW8+8/P8IU8EDXAnrfv8zDXfPY
+      9+5l1q1aSrh0jJpEgYhb5Pzl0aCXHLjpHwLRkjhToykmxkbI5qC240GaQ5foWruZK+f7eOfg
+      78nnpzhxNsW6NW0sXtTM+jX3cjUf5ys7niaWepfO+9YF+bWYNzyc5nJ65naUY9kCK5bUMJzK
+      UF5ZQWX0+v08O5c20H9hOMCV3jmmtwCT6SEuTMZ4/IuP03d1jPMnztB2z/3kJ65w5uwVVq1Z
+      S3r4KpnMOGMTDqmREVzHYWJslP5TQyxZ+VnqqhIf9bnEZ7VzK6hKltDaMIfKqnJy+QLZgosT
+      jdFUHSGdyVEsFnjjwAlaljRxeuiDu+LWJrdj5rYoboEf/ee/3fCXe14/PP12LwCvAfDKOYBD
+      0393umo+TjLBH/rP+rZQ+cuuXBvhxVe7rz+4mP7Ij+39w9gnsKI7nyf3BRofvsDPX97txSiR
+      T5QOBIhpCkBMUwBimgIQ0xSAmKYAxDQFIKYpADFNAYhpCkBMUwBimgIQ0xSAmKYAxDQFIKYp
+      ADFNAYhpCkBM8+SSyD9lSVM13310i1/jJWCxkMNUcfZfUe9bAI7jEI2E/RovAYuGwC0GvYrb
+      p10gMU0BiGkKQExTAGLazJPgSAzaN3gzdd4Sb+aI+GwmgEQ5fPNn3kxtinozR8RnMwGMXoVd
+      rd5M3fksPPl9b2aJ+EjPAcQ0BSCmKQAxTQGIaQpATPPtZLhQ9holZ97wa7wELBJycHQ26EcM
+      Tp2l/PS3/Bov4gntAolpCkBMUwBimgIQ0xSAmKYAxDQFIKYpADFNAYhpCkBMUwBimgIQ0xSA
+      mKYAxDQFIKYpADFNAYhpCkBMm7kk0gmzpL2TZCzE2b5+yI0zMp4LcGnyYU6iBnfi6vW3k404
+      8Tm4mcsQSuKUJCim+sBxcSLJ6Y+Tv+xDN8eNs+PLW3nxB//N/K7NLCse5Ey2CXdkgIFUkdUd
+      C6jr3ELy8lu8dXQAN1rCSGqctuYa9r19kMLsvz76zpVcSMn6XWT3/iMA7lQap7qLSEUFVK4g
+      //6rOGUdhOvKcMrqyfX8JOAFzx437AKVz21g5cpOYiEobbyH5/5qI0/s2MHXn3mS7p7/49Lg
+      VY50H2LbE7uoL0/y1JOPc5FGtm9YHtT6bRjrp5C6NPN4Kk24Zj65c90UzvcQaf8KoXgJkWXb
+      KPb9b3DrnIVmtgBugb6+80CYyfQlLqQHOVI9n4FTxxiP1PC5z9zP4fcPs+HetQyc6uaN3x2g
+      pK6J1S3lHO2JsfWh1ZTOXcDLL+0O7qu5SzlzFuOEQoTrl0OykcKF0xSvHoJ8Eae0End8gOLE
+      MLmeH+DUrIbhPaAt8k1xXNd1M6l+vrovz+7t3twd+vM7nyW7aSevXt3lyTwRv+gokJimAMQ0
+      BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0BSCmKQAxTQGIaQpATFMAYpoCENMUgJimAMQ0
+      314p3g3HKMRr/BovAXO4Oy479i2AXG0XQ1te8Wu8BCwWgqli0Ku4fdoFEtMUgJimAMQ0BSCm
+      KQAxbeYoUKICvvFTb6Z2LfZmjojPZgIo5KHvqDdTm6Iw/x5vZon4aCaAyXH42be9mVr2LHQ+
+      6s0sER/pOYCYpgDENAUgpikAMU0BiGm+nQ3q9PcR/s2Lfo2XgBUdCN8F50P7FgDZDE7fOd/G
+      S/CcoBfgAe0CiWkKQExTAGKaAhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDE
+      NAUgpikAMU0BiGkKQEy76QA2bd/B9sceob4i8Wc+wmHr1kc8WpYAhOsXklh77/Tjks6VlG15
+      hNjiJuKrVhG/p51YWyeh5BxKVywPcKWz101fE7x0+VIO7fkxkbnNfG37vYxdu0g6Vkt9RZxD
+      +3/HgxseoH3pYvbs+ZWf6zXFzUwQaewCegCYPNZLrHUhU/0XiOQixDubcXJxSttaGP+N/t1v
+      xU1vAVy3yNTUJF3r1vLu63tY1P4ZOltq2ds9wNee+RsGjuzlwpUxP9dqTnF09IZXogvNa6Z4
+      +SwUXdypSYjGAHBdcELhgFY5u930FuBY90FOnj7HqYu/5AuPbuLI/ldIR+vY2FHN957/FzZu
+      epjB86f8XKs50SVLcLM5oosWEU5EKBTjZHqOE6ptILaogXx/H4VsiMxAHyXLmskffS/oJc86
+      juu6bibVz1f35dm9vdWToZ/f+SzpTz/HD9/8J0/mifhFR4HENAUgpikAMU0BiGkKQExTAGKa
+      AhDTFICYpgDENAUgpikAMU0BiGkKQExTAGKaAhDTFICYpgDENAUgpvn3SvHxBG7rEt/GS7Ac
+      5/rF+LOdbwG4CxZS2PZNv8ZLwGIhmCoGvYrbp10gMU0BiGkKQExTAGKaAhDTZo4CJavhuz3e
+      TG2t4mg6zGOHkt7MkzuOww23LZ21pm+N+NZQmIGsN0dFz2VLOXi8D3b7c2vE5uZmBgcHyWQy
+      vsz3W3X1XGKxKIODg0Ev5ZZ1dXXR29sb9DJuWUdHB8ePH5/ZAqyvzHo2/IWBEHtPXoGXfuTZ
+      TLmzpAcH2L9/f9DLuGV7X7r+p54DyC2Zzd/8H+ZbAOGSOC0tLcyrraIkUc6C+fU4QE39fKrK
+      /9yrzMidyaGqqgqAqpp6aqrm4ITCNC1cREkkRGlZBU0NdQGv8db4dirEsjXrWHt4Pr/eP8Ku
+      rz/DxSujLDt/klWdC6G0iuef/2cKd8OzKAPa73uQbzz1GH/7D9/j6Z2PQ0mS3t4BkgzRtGUD
+      bnkdg8NZzr/5Yw6cvhL0cj8W37YAl08eYzi0gC99YTPlkSIHDr3Hus2b6T96gIl8lGhEe1+z
+      xXvd73BhaILSumbGLhzh1IjLg12NvPPmXkoblxN3Rvlt9wk6ljYGvdSPzbfvwogDo8PXcMIR
+      hnMOmx5ayRu/+AUtn/4cycgkufxdcCaVEQtb22hsamReNE35wvvpqITfHj7HxkefYLyvl7Fi
+      BdvWr+DIewNBL/Vjmz4M6hZzng19YaCcv3v5OFXf/yLpkRRuOEoyHiM1kqZsTgXFXIZMdsqz
+      zyf+KkuWU1oSJZsZp+hECRWnGM/mqKysYGwkBZESkqURUqOz7zXi/DsdupBnaGjo+oPCJKmp
+      SQDG0yN+fUrxyfjYKOPT39szh8tTw8PX35jKkpqlP8+0Iy6m/T85mRJfH771WwAAAABJRU5E
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
