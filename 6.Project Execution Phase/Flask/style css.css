@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.page, .login-container {
+  max-width: 600px;
+  margin: auto;
+  background: #222;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+}
